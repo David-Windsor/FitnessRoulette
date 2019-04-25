@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="365dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="366dp"
+            app:layout_constraintGuide_begin="366dp"/>
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline2"
+            app:layout_constraintGuide_percent="0.50121653"/>
+
+    <Button
+            android:text="@string/beginner_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/beginner_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/intermediate_button" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"/>
+    <Button
+            android:text="@string/interediate_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/intermediate_button"
+            app:layout_constraintTop_toBottomOf="@+id/beginner_button"
+            app:layout_constraintBottom_toTopOf="@+id/advanced_button" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <Button
+            android:text="@string/advanced_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/advanced_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/intermediate_button" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+    />
+</android.support.constraint.ConstraintLayout>
